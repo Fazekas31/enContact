@@ -21,7 +21,7 @@ export const Sidebar: React.FC = () => {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const response = await fetch('http://my-json-server.typicode.com/EnkiGroup/DesafioFrontEnd2026Jr/menus');
+        const response = await fetch('https://my-json-server.typicode.com/EnkiGroup/DesafioFrontEnd2026Jr/menus');
         if (response.ok) {
           const data = await response.json();
           setMenus(data);

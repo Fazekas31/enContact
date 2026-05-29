@@ -89,7 +89,7 @@ export const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setIsLoading(true);
       setSelectedMailIds([]); // Limpa a seleção ao trocar de pasta
       try {
-        const response = await fetch(`http://my-json-server.typicode.com/EnkiGroup/DesafioFrontEnd2026Jr/items/${activeMenuId}`);
+        const response = await fetch(`https://my-json-server.typicode.com/EnkiGroup/DesafioFrontEnd2026Jr/items/${activeMenuId}`);
         if (response.ok) {
           const data = await response.json();
           // Enriquece os itens com dados virtuais para fidelidade de design
